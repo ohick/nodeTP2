@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head'); %>
+  </head>
+  <body>
+    <header><%- include('../partials/header'); %></header>
+    <main>
+      <div class="container mt-5 bg-light">
+        <div class="row justify-content-center p-5">
+          <h1>Se connecter</h1>
+          <form class="col-6" method="POST" action="/login">
+            <div>
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" name="email" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" name="password" id="exampleInputPassword1" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>
